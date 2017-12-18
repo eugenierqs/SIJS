@@ -1,5 +1,6 @@
 var listFilm=document.querySelector(".list");
 var player=document.querySelector(".playerContainer");
+var textDescription=document.querySelector(".describ");
 for(var i=0;i<data.films.length;i++){
   listFilm.innerHTML+='<li class="filmName">'+data.films[i].title+'</li>';
 }
@@ -14,6 +15,11 @@ for(let i=0;i<link.length;i++){
     '<nav class="vidMenu">'+
     '<button class="pause"></button>'+
     '</nav>';
+    textDescription.style.display="block";
+    textDescription.innerHTML='<h2 class="videoTitle">'+data.films[i].title+'</h2>'+
+    '<h3 class="videoAuthor">'+data.films[i].author+'</h3>'+
+    '<h3 class="videoAuthor">'+data.films[i].year+'</h3>'+
+    '<p class="videoDescription">'+data.films[i].description+'</p>';
     var video=document.getElementById('our-video');
     video.play();
     p=1;
