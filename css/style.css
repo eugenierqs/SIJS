@@ -1,5 +1,41 @@
+.playerContainer{
+  background-color: black;
+  width: 600px;
+  height: 400px;
+}
 
+video{
+  position: absolute;
+}
+
+.vidMenu{
+  position: relative;
+  top: 370px;
+  left: 15px;
+}
 
 .filmName:hover{
+  cursor:pointer;
+}
+
+
+.pause{
+  background: none;
+  width: 20px;
+  height: 20px;
+  border-style: double;
+  border-width: 0px 0px 0px 20px;
+  border-color: #fff;
+}
+.pause:hover{
+  cursor:pointer;
+}
+.play {
+  border-style: solid;
+  box-sizing: border-box;
+  border-width: 10px 0px 10px 20px;
+  border-color: transparent transparent transparent #fff;
+}
+.play:hover{
   cursor:pointer;
 }
