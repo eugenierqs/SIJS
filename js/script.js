@@ -11,13 +11,6 @@ for(let i=0;i<link.length;i++){
     '</video>';
     var video=document.getElementById('our-video');
     video.play();
-    listFilm.style.display="none";
+    player.style.float="left";
   })
 }
-var btnPlay = document.querySelector('.play');
-var btnPause = document.querySelector('.pause');
-  btnPlay.addEventListener("click", function(){
-    if(btnPlay.style.display==="block"){
-      btnPause.style.display="block";
-    }
-  });
