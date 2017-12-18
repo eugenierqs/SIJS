@@ -11,7 +11,8 @@ video{
 .vidMenu{
   position: relative;
   top: 370px;
-  left: 15px;
+  padding-left: 15px;
+  width: 100%;
 }
 
 .filmName:hover{
@@ -26,6 +27,7 @@ video{
   border-style: double;
   border-width: 0px 0px 0px 20px;
   border-color: #fff;
+  outline: none;
 }
 .pause:hover{
   cursor:pointer;
@@ -38,4 +40,23 @@ video{
 }
 .play:hover{
   cursor:pointer;
+}
+
+.describ{
+  display: none;
+  width: 580px;
+  background: cyan;
+  padding: 10px;
+}
+
+.videoTitle{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.videoAuthor{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.videoDescription{
+  font-size: 18px;
 }
