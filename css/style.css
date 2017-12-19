@@ -8,15 +8,33 @@ html:fullscreen {
     overflow: hidden;
 }
 
+.containerAllVideo{
+  display: flex;
+  justify-content: space-between;
+  width: 1030px;
+  margin-left: 50vw;
+  transform: translate(-50%,0);
+}
+
+.containerAllVideoFullScreen{
+  width: 100vw;
+  height: 100vh;
+}
+
 .playerContainer{
   background-color: black;
-  width: 600px;
+  width: 712px;
   height: 400px;
+}
+.playerContainerFullScreen{
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
 }
 
 .video{
   position: absolute;
-  width: 600px;
+  width: 712px;
   height: 400px;
 }
 
@@ -27,9 +45,15 @@ html:fullscreen {
 
 .vidMenu{
   position: relative;
-  top: 350px;
-  padding-left: 15px;
+  top: 90%;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.vidMenuFullScreen{
+  top: 95%;
 }
 
 .menuItem{
@@ -50,6 +74,10 @@ html:fullscreen {
   cursor: pointer;
 }
 
+.fullScreen{
+  margin-right: 15px;
+}
+
 .fullScreenSkin{
   background: none;
 }
@@ -62,23 +90,95 @@ html:fullscreen {
   border-width: 0px 0px 0px 20px;
   border-color: #fff;
   outline: none;
+  margin-top: 8px;
+  margin-left: 15px;
 }
 .pause:hover{
   cursor:pointer;
 }
 .play {
+  width: 20px;
+  height: 20px;
+  background: none;
   border-style: solid;
   box-sizing: border-box;
   border-width: 10px 0px 10px 20px;
   border-color: transparent transparent transparent #fff;
+  outline: none;
+  margin-top: 8px;
+  margin-left: 15px;
 }
 .play:hover{
   cursor:pointer;
 }
 
+.stop{
+  margin-top: 6px;
+  width: 30px;
+  height: 30px;
+}
+
+.stop:hover{
+  cursor:pointer;
+}
+
+.progressContainer{
+  width: 55%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+#progressBarControl{
+  background: #D8D8D8;
+  height: 7px;
+  border-radius: 3px;
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+#progressBar{
+  background: #4a90e2;
+  height: 7px;
+  border-radius: 3px;
+}
+
+#progressTime{
+  color: white;
+}
+#progressTime:after{
+  content:'/';
+  padding: 0 8px;
+}
+
+.totalTime{
+  color: white;
+}
+
+.songContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.songIcon{
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.songBar{
+  width: 100px;
+}
+
+.fullScreen{
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+}
+
 .describ{
   display: none;
-  width: 580px;
+  width: 300px;
   background: cyan;
   padding: 10px;
 }
@@ -92,5 +192,5 @@ html:fullscreen {
   margin-bottom: 10px;
 }
 .videoDescription{
-  font-size: 18px;
+  font-size: 15px;
 }
