@@ -1,24 +1,58 @@
+html:-moz-full-screen {
+    overflow: hidden;
+}
+html:-webkit-full-screen {
+    overflow: hidden;
+}
+html:fullscreen {
+    overflow: hidden;
+}
+
 .playerContainer{
   background-color: black;
   width: 600px;
   height: 400px;
 }
 
-video{
+.video{
   position: absolute;
+  width: 600px;
+  height: 400px;
+}
+
+.videoFullScreen{
+  width: 100%;
+  height: 100%;
 }
 
 .vidMenu{
   position: relative;
-  top: 370px;
+  top: 350px;
   padding-left: 15px;
   width: 100%;
+}
+
+.menuItem{
+  display: inline;
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+.menuItem:hover{
+  cursor:pointer;
 }
 
 .filmName:hover{
   cursor:pointer;
 }
 
+.fullScreen:hover{
+  cursor: pointer;
+}
+
+.fullScreenSkin{
+  background: none;
+}
 
 .pause{
   background: none;
