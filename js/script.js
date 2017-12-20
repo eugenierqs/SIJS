@@ -7,11 +7,8 @@ for (let e = 0; e < menuItem.length; e++) {
   menuItem[e].addEventListener("click", function() {
     categoryChoice(listAllFilm, e);
     videoChoice();
-
   });
 }
-
-
 
 function categoryChoice(listAllFilm, e) {
   listAllFilm.innerHTML = "";
@@ -122,10 +119,13 @@ function videoCreate(player, textDescription, c) {
 function hoverVideo(player, menu) {
   player.addEventListener("mouseover", function() {
     menu.style.display = "";
+
     player.addEventListener("mousemove", function() {
       menu.style.display = "";
+      player.style.cursor="";
       setTimeout(function() {
         menu.style.display = "none";
+        player.style.cursor="none";
       }, 3000);
     });
   });
